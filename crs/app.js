@@ -15,11 +15,11 @@ function App() {
 
     const cssElem = document.createElement('link');
     cssElem.setAttribute('rel', 'stylesheet');
-    cssElem.href = '/css/style.css';
+    cssElem.href = 'css/style.css';
 
     const cssMediaElem = document.createElement('link');
     cssMediaElem.setAttribute('rel', 'stylesheet');
-    cssMediaElem.href = '/css/media.css';
+    cssMediaElem.href = 'css/media.css';
 
     document.head.append(metaUtfElem, metaViewportElem, titleElem, cssElem, cssMediaElem);
 
