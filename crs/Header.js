@@ -11,9 +11,9 @@ function Header(){
 
                 <nav class="header__nav">
                     <ul>
-                        <li><a class="header__nav_home" href="/">Главная</a></li>
-                        <li><a class="header__nav_product" href="/">Каталог</a></li>
-                        <li><a class="header__nav_contact" href="/">Связь с нами</a></li>
+                        <li><div class="header__nav_home" href="/">Главная</div></li>
+                        <li><div class="header__nav_product" href="/">Каталог</div></li>
+                        <li><div class="header__nav_contact" href="/">Связь с нами</div></li>
                     </ul>
                 </nav>
 

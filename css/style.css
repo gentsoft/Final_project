@@ -21,6 +21,16 @@ body {
     list-style: none;
 }
 
+.header__nav_home,
+.header__nav_product,
+.header__nav_contact{
+    cursor: pointer;
+    color: blueviolet;
+    background-color: rgb(156, 235, 166);
+    padding: 5px;
+    border-radius: 10px;
+}
+
 .main__Home__img__slaider {
     width:  100%;
     overflow: hidden;

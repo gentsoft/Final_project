@@ -14,7 +14,18 @@ function Main(){
 
 
     butHome.addEventListener('click', function(){
-        return elem;
+        let content = `
+        <div class="container">                
+            <div class="main__home">
+                <div class="main__Home__img__slaider">
+                    ${Home()}
+                </div>
+            </div>
+        </div>
+        `;
+    elem.innerHTML = content;
+    return elem;
+
     });
 
     butProduct.addEventListener('click', function(){
