@@ -1,0 +1,1 @@
+import App from "./crs/app.js";
