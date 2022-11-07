@@ -1,6 +1,6 @@
-import Contact from "pages/Contact.js";
-import Home from "pages/Home.js";
-import Product from "pages/Product.js";
+import Contact from "./pages/Contact.js";
+import Home from "./pages/Home.js";
+import Product from "./pages/Product.js";
 
 function Main(){
     const elem = document.createElement('main');
