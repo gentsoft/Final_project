@@ -4,7 +4,7 @@ function Home(){
     let criateElem = function(num){
         let elem = `
         <div class="main__Home__img">
-            <img src="/crs/img/home_${num}.jpg" alt="#">
+            <img src="crs/img/home_${num}.jpg" alt="#">
         </div>`
         return elem;
     };
