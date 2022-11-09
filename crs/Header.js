@@ -6,7 +6,7 @@ function Header(){
             <div class="container">
 
                 <div class="header__logo">
-                    <a href="/"><img src="https://via.placeholder.com/100x40" /></a>
+                    <img src="./crs/img/logo.png"/>
                 </div>
 
                 <nav class="header__nav">
@@ -17,16 +17,11 @@ function Header(){
                     </ul>
                 </nav>
 
-                <div class="header__save">
-                <a href="/"><img src="https://via.placeholder.com/40x40" /></a>
-                </div>
-
             </div>
         `;
 
     return elem;
 
 }
-console.log('метка 2');
 
 export default Header();

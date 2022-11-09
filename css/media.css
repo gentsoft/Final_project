@@ -1,3 +1,10 @@
-.container {
-    border: 3px solid green;
+@media (max-width: 500px) {
+
+    .main__Product__contnet {
+        width: 90%;
+    }
+
+    .main__Contact iframe {
+        width: 90%;
+    }
 }

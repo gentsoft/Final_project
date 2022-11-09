@@ -5,8 +5,7 @@ let contentF = async function(){
     await fetch('https://gentsoft.github.io/FakIpi/crs/info.json')
     .then(res=>res.json())
     .then(json=>{
-        // console.log(json);
-        console.log(json.shoes);
+
         let shoess = json.shoes;
         for(let i = 1; i <=33; i++){
             // console.log(shoess[i].photo)
@@ -40,13 +39,12 @@ let contentF = async function(){
     })
 };
 contentF()
+
 }
 avaitInfo()
 
 function Product(){
  return content
 }
-
-console.log('метка Product');
 
 export default Product;

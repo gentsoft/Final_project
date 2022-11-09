@@ -23,12 +23,8 @@ function App() {
 
     document.head.append(metaUtfElem, metaViewportElem, titleElem, cssElem, cssMediaElem);
 
-    console.log('метка 1')
-
     const getRoot = function() {
         let elem = document.getElementById('root');
-        console.log(elem)
-        console.log(Header)
         let getHeder = function(){
                 return elem.append(Header)
             };    
@@ -39,9 +35,6 @@ function App() {
     
     getRoot();
 }
-
-console.log('метка 3');
-
 
 export default new App();
 

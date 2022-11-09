@@ -4,13 +4,18 @@
 }
 
 body {
-    background-color: rgba(255, 223, 80, 0.493);
+    background-color: rgba(203, 241, 193, 0.801);
 }
 
 .header .container,
 .header__nav ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.header__logo img{
+    width: 160px;
 }
 
 .header__nav ul {
@@ -25,8 +30,8 @@ body {
 .header__nav_product,
 .header__nav_contact{
     cursor: pointer;
-    color: blueviolet;
-    background-color: rgb(156, 235, 166);
+    color: rgb(25, 136, 31);
+    background-color: rgba(156, 235, 167, 0.322);
     padding: 5px;
     border-radius: 10px;
 }
@@ -62,7 +67,9 @@ body {
 .main__product {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px
+    gap: 10px;
+    margin-left: 10%;
+
 }
 
 .main__Product__contnet {
@@ -79,4 +86,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+.main__Contact iframe {
+    width: 75%;
 }

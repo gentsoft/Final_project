@@ -39,7 +39,6 @@ function Home(){
                             elem.classList.add('main__Home_25')
                             setTimeout(() => {
                                 elem.classList.remove('main__Home_25')
-                                console.log('работает')
                                 setTimeout(() => {
                                     slaeder()
                                 }, time);
@@ -65,8 +64,5 @@ function Home(){
     return content;
 
 }
-console.log('метка Product');
-
-
 
 export default Home;

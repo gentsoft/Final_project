@@ -10,9 +10,6 @@ function Main(){
         butProduct= document.querySelector('.header__nav_product'),
         butContact= document.querySelector('.header__nav_contact');
 
-        console.log('майн кнопки', butHome)
-
-
     butHome.addEventListener('click', function(){
         let content = `
         <div class="container">                
