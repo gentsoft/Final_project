@@ -1,5 +1,11 @@
 @media (max-width: 500px) {
 
+    .header__nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
     .main__Product__contnet {
         width: 90%;
     }
