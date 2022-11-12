@@ -71,7 +71,8 @@ body {
 
 .main__Product__Filter_gender,
 .main__Product__Filter_season,
-.main__Product__Filter_size {
+.main__Product__Filter_size,
+.main__Product__Filter_none {
     display: none;
 }
 

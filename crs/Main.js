@@ -1,6 +1,7 @@
 import Contact from "./pages/Contact.js";
 import Home from "./pages/Home.js";
 import Product from "./pages/Product.js";
+import Listener from "./listenet.js";
 
 function Main(){
     const elem = document.createElement('main');
@@ -36,29 +37,40 @@ function Main(){
 
     let contentFilter = `
     <div class="main__Product__Filter">
+
         <div class="main__Product__Filter_Sl">
-        каму:
-        <div class="main__Product__Filter_gender">
-            <input type="radio" name="gender" value="M"> M<Br>
-            <input type="radio" name="gender" value="W"> W<Br>
-            <input type="radio" name="gender" value="ChM"> M<Br>
-            <input type="radio" name="gender" value="ChW"> W<Br>
-        </div>
+        кому:
+            <div class="main__Product__Filter_gender">
+                <input type="radio" name="gender" value="M"> мужксая<Br>
+                <input type="radio" name="gender" value="W"> женская<Br>
+                <input type="radio" name="gender" value="ChM"> мальчику<Br>
+                <input type="radio" name="gender" value="ChW"> декочке<Br>
+            </div>
         </div> 
+
         <div class="main__Product__Filter_Sl">
         сезон:
-        <div class="main__Product__Filter_season">
-            <input type="radio" name="season" value="winter">winter<Br>
-            <input type="radio" name="season" value="all-season">all-season<Br>
-            <input type="radio" name="season" value="autumn-spring">autumn-spring<Br>
-            <input type="radio" name="season" value="summer">summer<Br>   
+            <div class="main__Product__Filter_season">
+                <input type="radio" name="season" value="winter">зима<Br>
+                <input type="radio" name="season" value="all-season">все-сезонные<Br>
+                <input type="radio" name="season" value="autumn-spring">осенне-весенние<Br>
+                <input type="radio" name="season" value="summer">лето<Br>   
+            </div> 
         </div> 
-        </div> 
+
         <div class="main__Product__Filter_Sl">
         размер:
-        <div class="main__Product__Filter_size">
-            ${radioSize()}
+            <div class="main__Product__Filter_size">
+                ${radioSize()}
+            </div>
         </div>
+
+        <div class="main__Product__Filter_Sl">
+            подобрать
+        </div>
+
+        <div class="main__Product__Filter_Sl">
+        очистить
         </div>
           
     </div>
@@ -74,6 +86,7 @@ function Main(){
             </div>
             `;
         elem.innerHTML = content;
+        Listener();
         return elem;
     });
     

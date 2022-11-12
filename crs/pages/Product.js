@@ -2,6 +2,17 @@ let content = ``;
 
 let avaitInfo = function(){
 
+    let translate = function(info){
+        if(info == 'M'){ return 'мужская'};
+        if(info == 'W'){ return 'женская'};
+        if(info == 'ChM'){ return 'мальчику'};
+        if(info == 'ChW'){ return 'девочке'};
+        if(info == 'winter'){ return 'зима'};
+        if(info == 'summer'){ return 'лето'};
+        if(info == 'all-season'){ return 'все-сезонная'};
+        if(info == 'autumn-spring'){ return 'осенне-весенняя'};
+    };
+
 let contentF = async function(){
 
     await fetch('https://gentsoft.github.io/FakIpi/crs/info.json')
@@ -17,10 +28,10 @@ let contentF = async function(){
                     </div>
                     <div class="main__Product__info">
                         <div class="main__Product__info_gender">
-                            <span>Пол:</span><span>${shoess[i].gender}</span>
+                            <span>Пол:</span><span>${translate(shoess[i].gender)}</span>
                         </div>
                         <div class="main__Product__info_season">
-                            <span>Сезон:</span><span>${shoess[i].season}</span>
+                            <span>Сезон:</span><span>${translate(shoess[i].season)}</span>
                         </div>  
                         <div class="main__Product__info_size">
                             <span>Размер:</span><span>${shoess[i].size}</span>
