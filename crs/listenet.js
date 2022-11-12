@@ -20,6 +20,30 @@ function Listener(){
                 };
             };
         };
+
+        for(let i=0, n=27; i < inputSize.length;i++, n++){
+            if(inputSize[i].checked == true){
+                console.log(i,n)
+                let teg = 2;
+                let state = n + '';
+
+                for(let i = 0; i < allProduct.length; i++){
+                    let iAraund = i;
+                    allProduct[i].classList.add("main__Product__Filter_none");
+                    let arrSize = allProduct[i].children[1].children[teg].children[1].outerText;
+                    console.log(i+200,arrSize.split(',')[i],state)   
+                    for(let i = 0; i < arrSize.split(',').length; i++){  
+                        console.log(i+200,arrSize.split(',')[i],state)                        
+                        if(arrSize.split(',')[i] == state){    
+                            console.log(i+100,arrSize,state)                        
+                            allProduct[iAraund].classList.remove("main__Product__Filter_none");
+                        }
+                    }
+                };
+                
+            };
+        };
+
         //gender[0],season[1],size[2] tegi
         if(inputGender[0].checked == true){
             let teg = 0;
@@ -61,29 +85,7 @@ function Listener(){
             let state = 'лето';
             filterElemInsaid(state,teg);
             console.log('summer')};
-
-        for(let i=0, n=27; i < inputSize.length;i++, n++){
-            if(inputSize[i].checked == true){
-                console.log(i,n)
-                let teg = 2;
-                let state = n + '';
-
-                for(let i = 0; i < allProduct.length; i++){
-                    let iAraund = i;
-                    allProduct[i].classList.add("main__Product__Filter_none");
-                    let arrSize = allProduct[i].children[1].children[teg].children[1].outerText;
-                    console.log(i+200,arrSize.split(',')[i],state)   
-                    for(let i = 0; i < arrSize.split(',').length; i++){  
-                        console.log(i+200,arrSize.split(',')[i],state)                        
-                        if(arrSize.split(',')[i] == state){    
-                            console.log(i+100,arrSize,state)                        
-                            allProduct[iAraund].classList.remove("main__Product__Filter_none");
-                        }
-                    }
-                };
-                
-            };
-        };
+        
 
     });
 
