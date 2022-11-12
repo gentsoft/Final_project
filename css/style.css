@@ -64,6 +64,37 @@ body {
     width: 100%;
 }
 
+.main__Product__Filter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main__Product__Filter_gender,
+.main__Product__Filter_season,
+.main__Product__Filter_size {
+    display: none;
+}
+
+.main__Product__Filter_Sl {
+    color: rgb(25, 136, 31);
+    background-color:  rgba(130, 189, 138, 0.192);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.main__Product__Filter_Sl:hover > 
+.main__Product__Filter_gender,
+.main__Product__Filter_Sl:hover > 
+.main__Product__Filter_season,
+.main__Product__Filter_Sl:hover > 
+.main__Product__Filter_size {
+    color: black;
+    display: block;
+    position: absolute;
+    background-color: rgba(89, 201, 95, 0.267);
+}
+
 .main__product {
     display: flex;
     flex-wrap: wrap;

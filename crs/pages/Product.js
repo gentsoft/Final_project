@@ -1,11 +1,12 @@
 let content = ``;
 
 let avaitInfo = function(){
+
 let contentF = async function(){
+
     await fetch('https://gentsoft.github.io/FakIpi/crs/info.json')
     .then(res=>res.json())
     .then(json=>{
-
         let shoess = json.shoes;
         for(let i = 1; i <=33; i++){
             // console.log(shoess[i].photo)
@@ -20,8 +21,8 @@ let contentF = async function(){
                         </div>
                         <div class="main__Product__info_season">
                             <span>Сезон:</span><span>${shoess[i].season}</span>
-                        </div class="main__Product__info_size">  
-                        <div>
+                        </div>  
+                        <div class="main__Product__info_size">
                             <span>Размер:</span><span>${shoess[i].size}</span>
                         </div> 
                         <div class="main__Product__info_vendor">
