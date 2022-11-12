@@ -82,6 +82,11 @@ body {
     padding: 5px;
     border-radius: 10px;
     position: relative;
+    overflow:unset;
+}
+
+.main__Product__Filter_Sl:hover {
+    cursor: pointer;
 }
 
 .main__Product__Filter_Sl:hover > 
@@ -91,11 +96,13 @@ body {
 .main__Product__Filter_Sl:hover > 
 .main__Product__Filter_size {
     color: black;
-    display: block;
+    display:block;
     position: absolute;
     top: 100%;
     width: 100%;
     background-color: rgba(89, 201, 95, 0.267);
+    cursor: pointer;
+    width: max-content;
 }
 
 .main__product {
