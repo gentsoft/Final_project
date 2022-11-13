@@ -29,7 +29,7 @@ function Main(){
     let radioSize = function(){
         let contentFilterSize = ``;
         for(let i = 27; i < 48; i++){
-            let contentFilterCalc = `<input type="radio" name="size" value="${i}">${i}<Br>`;
+            let contentFilterCalc = `<input type="radio" name="size" value="${i}"> ${i}<Br>`;
             contentFilterSize = contentFilterSize + contentFilterCalc;
         };
         return contentFilterSize;
@@ -51,10 +51,10 @@ function Main(){
         <div class="main__Product__Filter_Sl">
         сезон:
             <div class="main__Product__Filter_season">
-                <input type="radio" name="season" value="winter">зима<Br>
-                <input type="radio" name="season" value="all-season">круглосезонная<Br>
-                <input type="radio" name="season" value="autumn-spring">осенне-весенние<Br>
-                <input type="radio" name="season" value="summer">лето<Br>   
+                <input type="radio" name="season" value="winter"> зима<Br>
+                <input type="radio" name="season" value="all-season"> круглосезонная<Br>
+                <input type="radio" name="season" value="autumn-spring"> осенне-весенние<Br>
+                <input type="radio" name="season" value="summer"> лето<Br>   
             </div> 
         </div> 
 

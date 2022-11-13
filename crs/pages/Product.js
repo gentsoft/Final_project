@@ -28,19 +28,19 @@ let contentF = async function(){
                     </div>
                     <div class="main__Product__info">
                         <div class="main__Product__info_gender">
-                            <span>Пол:</span><span>${translate(shoess[i].gender)}</span>
+                            <span>Пол: </span><span>${translate(shoess[i].gender)}</span>
                         </div>
                         <div class="main__Product__info_season">
-                            <span>Сезон:</span><span>${translate(shoess[i].season)}</span>
+                            <span>Сезон: </span><span>${translate(shoess[i].season)}</span>
                         </div>  
                         <div class="main__Product__info_size">
-                            <span>Размер:</span><span>${shoess[i].size}</span>
+                            <span>Размер: </span><span>${shoess[i].size}</span>
                         </div> 
                         <div class="main__Product__info_vendor">
-                            <span>Инвентарный №:</span><span>${shoess[i].vendor}</span>
+                            <span>Инвентарный №: </span><span>${shoess[i].vendor}</span>
                         </div>
                         <div class="main__Product__info_price">
-                            <span>Цена:</span><span>${shoess[i].price}</span>
+                            <span>Цена: </span><span>${shoess[i].price}</span>
                         </div>         
                     </div>
                 
