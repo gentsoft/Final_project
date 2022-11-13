@@ -72,7 +72,7 @@ function Listener(){
             console.log('winter')};
         if(inputSeason[1].checked == true){
             let teg = 1;
-            let state = 'все-сезонная';
+            let state = 'круглосезонная';
             filterElemInsaid(state,teg);
             console.log('all-season')};
         if(inputSeason[2].checked == true){
@@ -90,8 +90,6 @@ function Listener(){
     });
 
     filterElem[4].addEventListener('click', function(){
-
-        console.log('SDFGHSADFGSDBVA')
         let allProduct = document.querySelectorAll(".main__Product__contnet");
         for(let i=0; i < allProduct.length; i++)
             {allProduct[i].classList.remove("main__Product__Filter_none");}

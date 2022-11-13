@@ -10,7 +10,12 @@
         width: 90%;
     }
 
+    .main__Product__Filter {
+        flex-wrap: wrap;
+    }
+
     .main__Contact iframe {
         width: 90%;
     }
+
 }
