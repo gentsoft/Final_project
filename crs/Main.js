@@ -52,7 +52,7 @@ function Main(){
         сезон:
             <div class="main__Product__Filter_season">
                 <input type="radio" name="season" value="winter">зима<Br>
-                <input type="radio" name="season" value="all-season">все-сезонные<Br>
+                <input type="radio" name="season" value="all-season">круглосезонная<Br>
                 <input type="radio" name="season" value="autumn-spring">осенне-весенние<Br>
                 <input type="radio" name="season" value="summer">лето<Br>   
             </div> 
@@ -82,6 +82,9 @@ function Main(){
                     ${contentFilter}
                 <div class="main__product">
                     ${Product()}
+                </div>
+                <div class="main__Product__Filter_none_ContA main__Product__Filter_none_Cont">
+                    подходящего не найдено
                 </div>
             </div>
             `;

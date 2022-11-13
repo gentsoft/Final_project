@@ -9,7 +9,7 @@ let avaitInfo = function(){
         if(info == 'ChW'){ return 'девочке'};
         if(info == 'winter'){ return 'зима'};
         if(info == 'summer'){ return 'лето'};
-        if(info == 'all-season'){ return ' круглосезонная'};
+        if(info == 'all-season'){ return 'круглосезонная'};
         if(info == 'autumn-spring'){ return 'осенне-весенняя'};
     };
 

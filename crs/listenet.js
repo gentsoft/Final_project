@@ -23,7 +23,6 @@ function Listener(){
 
         for(let i=0, n=27; i < inputSize.length;i++, n++){
             if(inputSize[i].checked == true){
-                console.log(i,n)
                 let teg = 2;
                 let state = n + '';
 
@@ -31,11 +30,8 @@ function Listener(){
                     let iAraund = i;
                     allProduct[i].classList.add("main__Product__Filter_none");
                     let arrSize = allProduct[i].children[1].children[teg].children[1].outerText;
-                    console.log(i+200,arrSize.split(',')[i],state)   
-                    for(let i = 0; i < arrSize.split(',').length; i++){  
-                        console.log(i+200,arrSize.split(',')[i],state)                        
-                        if(arrSize.split(',')[i] == state){    
-                            console.log(i+100,arrSize,state)                        
+                    for(let i = 0; i < arrSize.split(',').length; i++){                         
+                        if(arrSize.split(',')[i] == state){                          
                             allProduct[iAraund].classList.remove("main__Product__Filter_none");
                         }
                     }
@@ -49,42 +45,50 @@ function Listener(){
             let teg = 0;
             let state = 'мужская';
             filterElemInsaid(state,teg);
-            console.log('M')};
+        };
         if(inputGender[1].checked == true){
             let teg = 0;
             let state = 'женская';
             filterElemInsaid(state,teg);
-            console.log('W')};
+        };
         if(inputGender[2].checked == true){
             let teg = 0;
             let state = 'мальчику';
             filterElemInsaid(state,teg);
-            console.log('ChM')};
+        };
         if(inputGender[3].checked == true){
             let teg = 0;
             let state = 'девочке';
             filterElemInsaid(state,teg);
-            console.log('ChW')};
+        };
         if(inputSeason[0].checked == true){
             let teg = 1;
             let state = 'зима';
             filterElemInsaid(state,teg);
-            console.log('winter')};
+        };
         if(inputSeason[1].checked == true){
             let teg = 1;
             let state = 'круглосезонная';
             filterElemInsaid(state,teg);
-            console.log('all-season')};
+        };
         if(inputSeason[2].checked == true){
             let teg = 1;
             let state = 'осенне-весенняя';
             filterElemInsaid(state,teg);
-            console.log('autumn-spring')};
+        };
         if(inputSeason[3].checked == true){
             let teg = 1;
             let state = 'лето';
             filterElemInsaid(state,teg);
-            console.log('summer')};
+        };
+
+        let allProductCont = document.querySelectorAll(".main__Product__Filter_none");
+        let contolNanProduct = document.querySelector(".main__Product__Filter_none_ContA")
+        if(allProductCont.length == allProduct.length){
+            contolNanProduct.classList.remove("main__Product__Filter_none_Cont")
+        }else{
+            contolNanProduct.classList.add("main__Product__Filter_none_Cont")
+        };
         
 
     });

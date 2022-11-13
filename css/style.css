@@ -67,12 +67,22 @@ body {
 .main__Product__Filter {
     display: flex;
     justify-content: space-evenly;
+    background-color: rgba(130, 189, 138, 0.192);
+}
+
+.main__Product__Filter_none_ContA {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: brown;
 }
 
 .main__Product__Filter_gender,
 .main__Product__Filter_season,
 .main__Product__Filter_size,
-.main__Product__Filter_none {
+.main__Product__Filter_none,
+.main__Product__Filter_none_Cont {
     display: none;
 }
 
