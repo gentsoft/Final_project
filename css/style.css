@@ -36,32 +36,16 @@ body {
     border-radius: 10px;
 }
 
-.main__Home__img__slaider {
-    width:  100%;
+.slaiderMI_conteiner__window_img {
+    display: flex;
     overflow: hidden;
 }
 
-.main__Home {
-    display: flex;
-    width: 400%;
-}
 
-.main__Home_25 {
-    translate: -25%
-    
-}
-
-.main__Home_50 {
-    translate: -50%
-}
-
-.main__Home_75 {
-    translate: -75%
-}
-
-.main__Home__img,
-.main__Home__img img {
+.slaiderMI_conteiner__window_img img {
     width: 100%;
+    position: relative;
+    left: -200%;
 }
 
 .main__Product__Filter {

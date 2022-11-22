@@ -1,3 +1,5 @@
+import linksWork from "./links.js";
+
 function Header(){
     const elem = document.createElement('header');
     elem.classList.add('header');
@@ -19,7 +21,6 @@ function Header(){
 
             </div>
         `;
-
     return elem;
 
 }

@@ -20,7 +20,6 @@ let contentF = async function(){
     .then(json=>{
         let shoess = json.shoes;
         for(let i = 1; i <=33; i++){
-            // console.log(shoess[i].photo)
             let contentPas = `
                 <div class="main__Product__contnet">
                     <div class="main__Product__img">
@@ -48,6 +47,7 @@ let contentF = async function(){
             `;
             content = content + contentPas;
         }
+
     })
 };
 contentF()
