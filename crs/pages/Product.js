@@ -23,7 +23,7 @@ let contentF = async function(){
             let contentPas = `
                 <div class="main__Product__contnet">
                     <div class="main__Product__img">
-                        <img src="${shoess[i].photo}" alt="#">                
+                        <img src="${shoess[i].photoMini}" alt="#">                
                     </div>
                     <div class="main__Product__info">
                         <div class="main__Product__info_gender">
