@@ -1,4 +1,5 @@
 @media (max-width: 5000px) {
+
     .main__home {
        display: flex;
        justify-content: center;
@@ -7,11 +8,21 @@
     .main__Home__img__slaider {
         max-width: 1920px;
     }
+
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1920px) {
+
     .main__Product__contnet {
         width: 23%;
+    }
+}
+
+@media (max-width: 1366px) {
+   
+    .popap__window_img img {
+        width: 100%;
+        height: 100%;
     }
 }
 
