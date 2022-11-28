@@ -1,3 +1,5 @@
+import Module from "../popapModule.js"
+
 let content = ``;
 
 let avaitInfo = function(){
@@ -56,6 +58,9 @@ contentF()
 avaitInfo()
 
 function Product(){
+    setTimeout(() => {
+        Module('.main__Product__img','.main__product__popap__window')
+    }, 100);
  return content
 }
 

@@ -81,6 +81,7 @@ function Main(){
             <div class="container">
                     ${contentFilter}
                 <div class="main__product">
+                    <div class="main__product__popap__window"></div>
                     ${Product()}
                 </div>
                 <div class="main__Product__Filter_none_ContA main__Product__Filter_none_Cont">
