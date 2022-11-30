@@ -1,6 +1,7 @@
-let linksWork = function () {
+let linksWork = function (link) {
+
     console.log('ССЫ ЛОЧКИ',document.location.href,window.location.href)
-    window.location.href= '#main';
+    window.location.href= `#${link}`;
     console.log('ССЫ ЛОЧКИ',document.location.href,window.location.href)
 }
 

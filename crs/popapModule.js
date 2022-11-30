@@ -1,3 +1,5 @@
+import linksWork from "./links.js";
+
 let Module = function (fElem,mainAlem) {
     if(!fElem)return;
     let elemPop = `)`;
@@ -18,12 +20,14 @@ let Module = function (fElem,mainAlem) {
                 </div>`;
                 let contentPop =  document.querySelector(mainAlem);
                 contentPop.innerHTML = elemPop;
+                linksWork(`ProductNamber:${shoes[i+1].vendor}`)
             })
             .then(function popap() {
                 let popWin = document.querySelector('.popap__window');
                 if(!popWin)return;
                 popWin.addEventListener("click",function() {
                     popWin.remove();
+                    linksWork('Product');
                 })
                 console.log('ура!')
             })

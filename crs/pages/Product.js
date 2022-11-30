@@ -1,4 +1,4 @@
-import Module from "../popapModule.js"
+import Module from "../popapModule.js";
 
 let content = ``;
 

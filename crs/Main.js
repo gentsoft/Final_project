@@ -2,6 +2,7 @@ import Contact from "./pages/Contact.js";
 import Home from "./pages/Home.js";
 import Product from "./pages/Product.js";
 import Listener from "./listenet.js";
+import linksWork from "./links.js";
 
 function Main(){
     const elem = document.createElement('main');
@@ -21,6 +22,7 @@ function Main(){
             </div>
         </div>
         `;
+        linksWork('Home');
     elem.innerHTML = content;
     return elem;
 
@@ -89,6 +91,7 @@ function Main(){
                 </div>
             </div>
             `;
+            linksWork('Product');
         elem.innerHTML = content;
         Listener();
         return elem;
@@ -102,6 +105,7 @@ function Main(){
                 </div>
             </div>
             `;
+            linksWork('Contact');
         elem.innerHTML = content;
         return elem;
     });
@@ -115,6 +119,7 @@ function Main(){
                 </div>
             </div>
         `;
+        linksWork('Home');
     elem.innerHTML = content;
     return elem;
 
