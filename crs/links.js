@@ -4,7 +4,7 @@ let linksWork = function () {
     console.log('ССЫ ЛОЧКИ',document.location.href,window.location.href)
 }
 
-export default linksWork();
+export default linksWork;
 
 // document.location.href	https://realadmin.ru/saytostroy/?page=4#top
 // document.location.protocol	https:

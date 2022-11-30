@@ -63,3 +63,32 @@
 
 }
 
+@media (max-height: 1200px) {
+    .popap__window_img img {
+        height: 1000px ;
+    }
+}
+
+@media (max-height: 1000px) {
+    .popap__window_img img {
+        height: 800px ;
+    }
+}
+
+@media (max-height: 800px) {
+    .popap__window_img img {
+        height: 600px ;
+    }
+}
+
+@media (max-height: 600px) {
+    .popap__window_img img {
+        height: 400px ;
+    }
+}
+
+@media (max-height: 400px) {
+    .popap__window_img img {
+        height: 300px ;
+    }
+}

@@ -24,5 +24,5 @@ function Header(){
     return elem;
 
 }
-
+linksWork();
 export default Header();
