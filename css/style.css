@@ -62,6 +62,7 @@ body {
     color: brown;
 }
 
+.header__nav__mobile,
 .main__Product__Filter_gender,
 .main__Product__Filter_season,
 .main__Product__Filter_size,

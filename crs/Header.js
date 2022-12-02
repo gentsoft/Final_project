@@ -10,6 +10,7 @@ function Header(){
                 </div>
 
                 <nav class="header__nav">
+                    <div class="header__nav__mobile">Меню</div>
                     <ul>
                         <li><div class="header__nav_home" href="/">Главная</div></li>
                         <li><div class="header__nav_product" href="/">Каталог</div></li>
