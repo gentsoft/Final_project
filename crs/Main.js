@@ -41,7 +41,7 @@ function Main(){
     <div class="main__Product__Filter">
 
         <div class="main__Product__Filter_Sl">
-        кому:
+        каму:
             <div class="main__Product__Filter_gender">
                 <input type="radio" name="gender" value="M"> мужксая<Br>
                 <input type="radio" name="gender" value="W"> женская<Br>
